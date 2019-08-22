@@ -24,18 +24,18 @@ class Api_serviceController {
             $feed = file_get_contents($url);
             $datos = json_decode($feed); 
             $cr = $datos->datetime;
-          var_dump($cr);
+         
             $url = "http://worldtimeapi.org/api/timezone/America/New_York";
             $feed = file_get_contents($url);
             $datos = json_decode($feed); 
             $ny = $datos->datetime;
-            var_dump($ny);
+            
             
             $url = "http://worldtimeapi.org/api/timezone/Europe/Belgrade";
             $feed = file_get_contents($url);
             $datos = json_decode($feed); 
             $bel = $datos->datetime;
-            var_dump($bel);
+            
             
             $output = array();
           for ($i = 1; $i <= 1; $i++) {
