@@ -1,0 +1,7 @@
+api_service.routing:
+  path: '/admin/structure/APIModule'
+  defaults:
+    _controller: '\Drupal\api_service\Controller\Api_ServiceController::test'
+    _title: 'Api Service'
+  requirements:
+    _permission: 'access content'
